@@ -1,6 +1,6 @@
-# Generative Adversarial Network (GAN) for Image Generation
+# GAN for doodle Generation
 
-This project implements a Generative Adversarial Network (GAN) to generate images of pears. The GAN consists of two neural networks: a **generator** that creates images and a **discriminator** that distinguishes between real and generated images. The two networks are trained simultaneously in a competitive manner.
+This project implements a Generative Adversarial Network (GAN) to generate doodles. The GAN consists of two neural networks: a **generator** that creates images and a **discriminator** that distinguishes between real and generated images. The two networks are trained simultaneously in a competitive manner.
 
 ---
 
@@ -20,4 +20,3 @@ This project implements a Generative Adversarial Network (GAN) to generate image
 
 - **Image Visualization**:
   - Generated images are visualized during training to monitor progress.
-
