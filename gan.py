@@ -4,10 +4,20 @@ import requests
 from keras.layers import Input, Conv2D, Dropout, Dense, BatchNormalization, Flatten
 from keras.layers import Activation, Reshape, Conv2DTranspose, UpSampling2D
 from keras.models import Sequential, Model
+from tqdm import trange
 
-url = "https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/pear.npy"
+# Get the object name from command line
+if len(sys.argv) < 2:
+    print("Usage: python3 gan.py <object_name>")
+    sys.exit(1)
+
+object_name = sys.argv[1]
+
+# Download the dataset
+url = f"https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap/{object_name}.npy"
+file_name = f"{object_name}.npy"
 response = requests.get(url)
-file_name = "pear.npy"
+
 with open(file_name, "wb") as file:
     file.write(response.content)
 
@@ -15,7 +25,7 @@ print(f"File downloaded and saved as {file_name}")
 
 X = np.load(file_name)
 X = X / 255.0
-X = X(-1, 28, 28, 1)
+X = X.reshape(-1, 28, 28, 1)
 
 def build_discriminator(img_shape=(28, 28, 1)):
     inputs = Input(img_shape)
@@ -69,7 +79,7 @@ if __name__ == "__main__":
     BATCH_SIZE = 64
     LAT_DIM = 100
 
-    for i in range(EPOCH):
+    for i in trange(EPOCH, desc="Training GAN"):
         b = X[np.random.choice(X.shape[0], BATCH_SIZE)]
         real = np.reshape(b, (BATCH_SIZE, 28, 28, 1))
 
@@ -85,6 +95,7 @@ if __name__ == "__main__":
         adversarial_model.train_on_batch(noise, y)
         
         if (i+1) % 400 == 0:
+            print(f"\nEpoch {i+1}/{EPOCH} - Showing generated images...")
             noise = np.random.uniform(-1.0, 1.0, size=[16, LAT_DIM])
             generated = generator.predict(noise, verbose=False)
             _, axs = plt.subplots(4, 4, figsize=(4, 4))
