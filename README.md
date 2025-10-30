@@ -81,51 +81,27 @@ Each image shows the generator's progress at different training stages.
 
 ### 🍐 Generated "Pear" Sketches
 <p align="center">
-  <figure>
-    <img src="results/pear1.png" width="120"/><br/>
-    <figcaption><em>400 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/pear2.png" width="120"/><br/>
-    <figcaption><em>800 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/pear3.png" width="120"/><br/>
-    <figcaption><em>1200 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/pear4.png" width="120"/><br/>
-    <figcaption><em>1600 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/pear5.png" width="120"/><br/>
-    <figcaption><em>2000 epochs</em></figcaption>
-  </figure>
+  <img src="results/pear1.png" width="120"/>
+  <img src="results/pear2.png" width="120"/>
+  <img src="results/pear3.png" width="120"/>
+  <img src="results/pear4.png" width="120"/>
+  <img src="results/pear5.png" width="120"/>
+</p>
+<p align="center">
+  <b>Epochs:</b> 400 &nbsp;&nbsp;|&nbsp;&nbsp; 800 &nbsp;&nbsp;|&nbsp;&nbsp; 1200 &nbsp;&nbsp;|&nbsp;&nbsp; 1600 &nbsp;&nbsp;|&nbsp;&nbsp; 2000
 </p>
 <p align="center"><em>Generated pear-like doodles showing progressive improvement over epochs.</em></p>
 
 ### 🚗 Generated "Car" Sketches
 <p align="center">
-  <figure>
-    <img src="results/car1.png" width="120"/><br/>
-    <figcaption><em>400 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/car2.png" width="120"/><br/>
-    <figcaption><em>800 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/car3.png" width="120"/><br/>
-    <figcaption><em>1200 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/car4.png" width="120"/><br/>
-    <figcaption><em>1600 epochs</em></figcaption>
-  </figure>
-  <figure>
-    <img src="results/car5.png" width="120"/><br/>
-    <figcaption><em>2000 epochs</em></figcaption>
-  </figure>
+  <img src="results/car1.png" width="120"/>
+  <img src="results/car2.png" width="120"/>
+  <img src="results/car3.png" width="120"/>
+  <img src="results/car4.png" width="120"/>
+  <img src="results/car5.png" width="120"/>
+</p>
+<p align="center">
+  <b>Epochs:</b> 400 &nbsp;&nbsp;|&nbsp;&nbsp; 800 &nbsp;&nbsp;|&nbsp;&nbsp; 1200 &nbsp;&nbsp;|&nbsp;&nbsp; 1600 &nbsp;&nbsp;|&nbsp;&nbsp; 2000
 </p>
 <p align="center"><em>Generated car-like doodles showing progressive improvement over epochs.</em></p>
 
