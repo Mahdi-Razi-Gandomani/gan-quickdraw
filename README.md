@@ -88,7 +88,7 @@ Each image shows the generator's progress at different training stages.
   <img src="results/pear5.png" width="120"/>
 </p>
 <p align="center">
-  <b>Epochs:</b> 400 | 800 | 1200 | 1600 | 2000
+  <b>Epochs:</b> 400        | 800 | 1200 | 1600 | 2000
 </p>
 <p align="center"><em>Generated pear-like doodles showing progressive improvement over epochs.</em></p>
 
